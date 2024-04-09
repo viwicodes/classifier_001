@@ -65,6 +65,8 @@ def firebase_push(connected, posture):
     print(connected.get())
 
 connected = firebase_connect()
+
+# Runner Loop
 while True:
     data_array = generate_data(1)
     predicted_arr = predict(data_array)
